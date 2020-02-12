@@ -4,10 +4,10 @@ from collections import OrderedDict
 import json
 import pickle
 
-from hash_util import hash_block
+from utility.hash_util import hash_block
+from utility.veryfication import Veryfication
 from block import Block
 from transaction import Transaction
-from veryfication import Veryfication
 
 MINING_REWARD = 10
 

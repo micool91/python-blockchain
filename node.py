@@ -2,7 +2,7 @@
 from uuid import uuid4
 
 from blockchain import Blockchain
-from veryfication import Veryfication
+from utility.veryfication import Veryfication
 
 class Node:
     def __init__(self):
@@ -74,5 +74,9 @@ class Node:
             print('User left!')
         print('Done')
 
-node = Node()
-node.listen_for_input()
+if __name__ == '__main__':
+    node = Node()
+    node.listen_for_input()
+
+# returns contexts of exectution 
+print(__name__)
